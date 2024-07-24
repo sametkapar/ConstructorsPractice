@@ -9,9 +9,20 @@ namespace LibraryPractice
     internal class Library
     {
         public Book[] books;
-
+        public Book[] users;
         public Library()
         {
+
+            users = new Book[2];
+            Book admin = new Book();
+            admin.userName = "admin";
+            admin.password = "1234";
+            users[0] = admin;
+            Book user1 = new Book();
+            user1.userName = "samet";
+            user1.password = "0000";
+            users[1] = user1;
+
             books = new Book[3];
 
             Book kitap = new Book();
@@ -55,11 +66,11 @@ namespace LibraryPractice
         }
         public void ListByType()
         {
-            
+
             for (int i = 0; i < books.Length; i++)
 
             {
-                Console.WriteLine((i+1)+ ")" + books[i].bookType);
+                Console.WriteLine((i + 1) + ")" + books[i].bookType);
             }
 
             for (int i = 0; i < books.Length; i++)
@@ -82,6 +93,13 @@ namespace LibraryPractice
 
 
             }
+        }
+
+        public void UserCheck(string kadi, string sifre)
+        {
+
+
+
         }
     }
 }

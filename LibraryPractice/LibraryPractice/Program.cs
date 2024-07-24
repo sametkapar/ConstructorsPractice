@@ -11,9 +11,19 @@ namespace LibraryPractice
         static void Main(string[] args)
         {
 
-            string devam = "e";
+            #region Kullanıcı adı kontrol.
 
+
+
+            #endregion
             Library kutuphane = new Library();
+            Console.WriteLine("Kullanıcı adınızı giriniz");
+            string kadi = Console.ReadLine();
+            Console.WriteLine("Şifrenizi giriniz");
+            string sifre = Console.ReadLine();
+
+
+            kutuphane.UserCheck(kadi, sifre);
             Console.WriteLine("1) kitap listesi");
             Console.WriteLine("2) türe göre arama");
             string secim = Console.ReadLine();
@@ -33,7 +43,7 @@ namespace LibraryPractice
             }
 
 
-
+            string devam = "e";
             while (devam == "e")
             {
                 Book kitap = new Book();
