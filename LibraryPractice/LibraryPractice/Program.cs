@@ -14,6 +14,25 @@ namespace LibraryPractice
             string devam = "e";
 
             Library kutuphane = new Library();
+            Console.WriteLine("1) kitap listesi");
+            Console.WriteLine("2) türe göre arama");
+            string secim = Console.ReadLine();
+
+            if (secim == "1")
+            {
+                kutuphane.ListBook();
+            }
+            else if (secim == "2")
+            {
+              
+                kutuphane.ListByType();
+            }
+            else
+            {
+                Console.WriteLine("hatalı giriş yaptınız");
+            }
+
+
 
             while (devam == "e")
             {
@@ -33,22 +52,7 @@ namespace LibraryPractice
                 Console.WriteLine("Kitap eklemeye devam etmek istiyor musunuz? ");
                 devam = Console.ReadLine();
             }
-            Console.WriteLine("1) kitap listesi");
-            Console.WriteLine("2) türe göre arama");
-            string secim = Console.ReadLine();
-
-            if (secim == "1")
-            {
-                kutuphane.ListBook();
-            }
-            else if (secim == "2")
-            {
-                kutuphane.ListByType();
-            }
-            else
-            {
-                Console.WriteLine("hatalı giriş yaptınız");
-            }
+           
         }
     }
 }

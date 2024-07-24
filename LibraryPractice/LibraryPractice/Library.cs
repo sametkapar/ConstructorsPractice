@@ -12,12 +12,34 @@ namespace LibraryPractice
 
         public Library()
         {
-            books = new Book[0];
+            books = new Book[3];
+
+            Book kitap = new Book();
+            kitap.bookName = "Yüzüklerin Efendisi";
+            kitap.bookAuthor = "Tolkein";
+            kitap.bookType = "roman";
+            kitap.bookPrice = 150;
+            books[0] = kitap;
+
+            Book kitap2 = new Book();
+            kitap2.bookName = "yaşamak iyidir";
+            kitap2.bookAuthor = "Tolkein";
+            kitap2.bookType = "makale";
+            kitap2.bookPrice = 150;
+            books[1] = kitap2;
+
+            Book kitap3 = new Book();
+            kitap3.bookName = "Death Note";
+            kitap3.bookAuthor = "Tsugumi Ooba";
+            kitap3.bookType = "manga";
+            kitap3.bookPrice = 150;
+            books[2] = kitap3;
         }
 
         public void AddBook(Book p_kitap)
         {
             Book[] gecici = new Book[books.Length + 1];
+
             Array.Copy(books, gecici, books.Length);
 
             gecici[gecici.Length - 1] = p_kitap;
@@ -45,6 +67,7 @@ namespace LibraryPractice
 
                 if (books[i].bookType == "roman")
                 {
+
                     Console.WriteLine(books[i].bookName);
                 }
                 else if (books[i].bookType == "makale")
