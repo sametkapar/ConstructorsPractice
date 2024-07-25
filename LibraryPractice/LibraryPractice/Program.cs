@@ -13,34 +13,36 @@ namespace LibraryPractice
 
             #region Kullanıcı adı kontrol.
 
-
-
-            #endregion
             Library kutuphane = new Library();
             Console.WriteLine("Kullanıcı adınızı giriniz");
             string kadi = Console.ReadLine();
             Console.WriteLine("Şifrenizi giriniz");
             string sifre = Console.ReadLine();
 
-
             kutuphane.UserCheck(kadi, sifre);
-            Console.WriteLine("1) kitap listesi");
-            Console.WriteLine("2) türe göre arama");
-            string secim = Console.ReadLine();
 
-            if (secim == "1")
-            {
-                kutuphane.ListBook();
-            }
-            else if (secim == "2")
-            {
-              
-                kutuphane.ListByType();
-            }
-            else
-            {
-                Console.WriteLine("hatalı giriş yaptınız");
-            }
+            #endregion
+
+
+
+
+            //Console.WriteLine("1) kitap listesi");
+            //Console.WriteLine("2) türe göre arama");
+            //string secim = Console.ReadLine();
+
+            //if (secim == "1")
+            //{
+            //    kutuphane.ListBook();
+            //}
+            //else if (secim == "2")
+            //{
+
+            //    kutuphane.ListByType();
+            //}
+            //else
+            //{
+            //    Console.WriteLine("hatalı giriş yaptınız");
+            //}
 
 
             string devam = "e";

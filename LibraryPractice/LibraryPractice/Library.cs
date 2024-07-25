@@ -39,16 +39,16 @@ namespace LibraryPractice
 
             Book kitap2 = new Book();
             kitap2.bookName = "yaşamak iyidir";
-            kitap2.bookAuthor = "Tolkein";
+            kitap2.bookAuthor = "BEN TEN";
             kitap2.bookType = "makale";
-            kitap2.bookPrice = 150;
+            kitap2.bookPrice = 235;
             books[1] = kitap2;
 
             Book kitap3 = new Book();
             kitap3.bookName = "Death Note";
             kitap3.bookAuthor = "Tsugumi Ooba";
             kitap3.bookType = "manga";
-            kitap3.bookPrice = 150;
+            kitap3.bookPrice = 77;
             books[2] = kitap3;
         }
 
@@ -102,15 +102,16 @@ namespace LibraryPractice
 
         public void UserCheck(string kadi, string sifre)
         {
-            Book kullanicilar = new Book();
-            kullanicilar.userNames = new string[] { "admin", "samet" };
-            Book sifreler = new Book();
-            sifreler.passwords = new string[] { "1234", "0000" };
+            
+            
+            string[] kullanicilar = { "admin", "samet" };
+            string[] sifreler = { "1234", "0000" };
             int index = -1;
-            for (int i = 0; i < kullanicilar.userNames.Length; i++)
+            for (int i = 0; i < kullanicilar.Length; i++)
             {
-                if (kullanicilar.userNames[i] == kadi)
+                if (kullanicilar[i] == kadi)
                 {
+                   
                     index = i; break;
                 }  
 
@@ -121,8 +122,31 @@ namespace LibraryPractice
             }
             else
             {
-                if (sifreler.passwords[index] == sifre)
+                if (sifreler[index] == sifre)
                 {
+                    if (kadi =="admin"&& sifre == "1234")
+                    {
+                        Console.WriteLine("Admin girişi yapıldı");
+
+                       
+                    }
+                    else
+                    {
+                        Console.WriteLine("Kullanıcı girişi yapıldı");
+                        Console.WriteLine("1) Kitap listesi");
+                        Console.WriteLine("2) Türe göre arama");
+                        string secim = Console.ReadLine();
+
+                        if (secim == "1")
+                        {
+                            ListBook();
+                        }
+                        if (secim == "2")
+                        {
+                            ListByType();
+                        }
+                       
+                    }
                     Console.WriteLine("Hoşgeldiniz");
                 }
                 else
