@@ -9,19 +9,24 @@ namespace LibraryPractice
     internal class Library
     {
         public Book[] books;
-        public Book[] users;
+
+
+        //public Book[] users;
+
         public Library()
         {
-
-            users = new Book[2];
-            Book admin = new Book();
-            admin.userName = "admin";
-            admin.password = "1234";
-            users[0] = admin;
-            Book user1 = new Book();
-            user1.userName = "samet";
-            user1.password = "0000";
-            users[1] = user1;
+            
+            //users = new Book[2];
+            //Book admin = new Book();
+            //admin.userName = "admin";
+            //admin.password = "1234";
+            ////admin.userNames = new string[] {"admin", "samet"};
+            //users[0] = admin;
+            //Book user1 = new Book();
+            //user1.userName = "samet";
+            //user1.password = "0000";
+            //users[1] = user1;
+            
 
             books = new Book[3];
 
@@ -97,9 +102,38 @@ namespace LibraryPractice
 
         public void UserCheck(string kadi, string sifre)
         {
+            Book kullanicilar = new Book();
+            kullanicilar.userNames = new string[] { "admin", "samet" };
+            Book sifreler = new Book();
+            sifreler.passwords = new string[] { "1234", "0000" };
+            int index = -1;
+            for (int i = 0; i < kullanicilar.userNames.Length; i++)
+            {
+                if (kullanicilar.userNames[i] == kadi)
+                {
+                    index = i; break;
+                }  
+
+            }
+            if (index == -1)
+            {
+                Console.WriteLine("Kullanıcı Bulunamadı Lütfen bilgileri kontrol ediniz");
+            }
+            else
+            {
+                if (sifreler.passwords[index] == sifre)
+                {
+                    Console.WriteLine("Hoşgeldiniz");
+                }
+                else
+                {
+                    {
+                        Console.WriteLine("Şifre Hatalı");
+                    }
+                }
 
 
-
+            }
         }
     }
 }
