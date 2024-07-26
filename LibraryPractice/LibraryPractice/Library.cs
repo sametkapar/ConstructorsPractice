@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,22 +12,9 @@ namespace LibraryPractice
         public Book[] books;
 
 
-        //public Book[] users;
-
         public Library()
         {
-            
-            //users = new Book[2];
-            //Book admin = new Book();
-            //admin.userName = "admin";
-            //admin.password = "1234";
-            ////admin.userNames = new string[] {"admin", "samet"};
-            //users[0] = admin;
-            //Book user1 = new Book();
-            //user1.userName = "samet";
-            //user1.password = "0000";
-            //users[1] = user1;
-            
+
 
             books = new Book[3];
 
@@ -50,6 +38,8 @@ namespace LibraryPractice
             kitap3.bookType = "manga";
             kitap3.bookPrice = 77;
             books[2] = kitap3;
+
+            
         }
 
         public void AddBook(Book p_kitap)
@@ -62,6 +52,8 @@ namespace LibraryPractice
 
             books = gecici;
         }
+
+        #region BookListing
         public void ListBook()
         {
             for (int i = 0; i < books.Length; i++)
@@ -69,6 +61,11 @@ namespace LibraryPractice
                 Console.WriteLine($"{i + 1}) {books[i].bookName} {books[i].bookAuthor} {books[i].bookType} {books[i].bookPrice}");
             }
         }
+
+        #endregion
+
+
+        #region TypeListing
         public void ListByType()
         {
 
@@ -100,10 +97,14 @@ namespace LibraryPractice
             }
         }
 
+        #endregion
+
+
+        #region UserCheck
         public void UserCheck(string kadi, string sifre)
         {
-            
-            
+
+
             string[] kullanicilar = { "admin", "samet" };
             string[] sifreler = { "1234", "0000" };
             int index = -1;
@@ -111,9 +112,9 @@ namespace LibraryPractice
             {
                 if (kullanicilar[i] == kadi)
                 {
-                   
+
                     index = i; break;
-                }  
+                }
 
             }
             if (index == -1)
@@ -124,11 +125,11 @@ namespace LibraryPractice
             {
                 if (sifreler[index] == sifre)
                 {
-                    if (kadi =="admin"&& sifre == "1234")
+                    if (kadi == "admin" && sifre == "1234")
                     {
                         Console.WriteLine("Admin girişi yapıldı");
 
-                       
+
                     }
                     else
                     {
@@ -145,9 +146,8 @@ namespace LibraryPractice
                         {
                             ListByType();
                         }
-                       
+
                     }
-                    Console.WriteLine("Hoşgeldiniz");
                 }
                 else
                 {
@@ -159,6 +159,7 @@ namespace LibraryPractice
 
             }
         }
+        #endregion
     }
 }
 
