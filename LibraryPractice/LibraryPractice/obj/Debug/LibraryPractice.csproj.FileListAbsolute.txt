@@ -12,3 +12,10 @@ C:\Users\Skapar\Documents\GitHub\ConstructorsPractice\LibraryPractice\LibraryPra
 C:\Users\Skapar\Documents\GitHub\ConstructorsPractice\LibraryPractice\LibraryPractice\obj\Debug\LibraryPractice.csproj.CoreCompileInputs.cache
 C:\Users\Skapar\Documents\GitHub\ConstructorsPractice\LibraryPractice\LibraryPractice\obj\Debug\LibraryPractice.exe
 C:\Users\Skapar\Documents\GitHub\ConstructorsPractice\LibraryPractice\LibraryPractice\obj\Debug\LibraryPractice.pdb
+C:\Users\user\Documents\GitHub\ConstructorsPractice\LibraryPractice\LibraryPractice\bin\Debug\LibraryPractice.exe.config
+C:\Users\user\Documents\GitHub\ConstructorsPractice\LibraryPractice\LibraryPractice\bin\Debug\LibraryPractice.exe
+C:\Users\user\Documents\GitHub\ConstructorsPractice\LibraryPractice\LibraryPractice\bin\Debug\LibraryPractice.pdb
+C:\Users\user\Documents\GitHub\ConstructorsPractice\LibraryPractice\LibraryPractice\obj\Debug\LibraryPractice.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\ConstructorsPractice\LibraryPractice\LibraryPractice\obj\Debug\LibraryPractice.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\ConstructorsPractice\LibraryPractice\LibraryPractice\obj\Debug\LibraryPractice.exe
+C:\Users\user\Documents\GitHub\ConstructorsPractice\LibraryPractice\LibraryPractice\obj\Debug\LibraryPractice.pdb

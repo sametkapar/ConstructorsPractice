@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Skapar\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{034607DF-558C-4258-A6DA-E73347B53D7C}|LibraryPractice\\LibraryPractice.csproj|C:\\Users\\Skapar\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\librarypractice\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{034607DF-558C-4258-A6DA-E73347B53D7C}|LibraryPractice\\LibraryPractice.csproj|c:\\users\\user\\documents\\github\\constructorspractice\\librarypractice\\librarypractice\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{034607DF-558C-4258-A6DA-E73347B53D7C}|LibraryPractice\\LibraryPractice.csproj|solutionrelative:librarypractice\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{034607DF-558C-4258-A6DA-E73347B53D7C}|LibraryPractice\\LibraryPractice.csproj|C:\\Users\\Skapar\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\librarypractice\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{034607DF-558C-4258-A6DA-E73347B53D7C}|LibraryPractice\\LibraryPractice.csproj|C:\\Users\\user\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\librarypractice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{034607DF-558C-4258-A6DA-E73347B53D7C}|LibraryPractice\\LibraryPractice.csproj|solutionrelative:librarypractice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{034607DF-558C-4258-A6DA-E73347B53D7C}|LibraryPractice\\LibraryPractice.csproj|C:\\Users\\user\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\librarypractice\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{034607DF-558C-4258-A6DA-E73347B53D7C}|LibraryPractice\\LibraryPractice.csproj|solutionrelative:librarypractice\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{034607DF-558C-4258-A6DA-E73347B53D7C}|LibraryPractice\\LibraryPractice.csproj|c:\\users\\skapar\\documents\\github\\constructorspractice\\librarypractice\\librarypractice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{034607DF-558C-4258-A6DA-E73347B53D7C}|LibraryPractice\\LibraryPractice.csproj|solutionrelative:librarypractice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{034607DF-558C-4258-A6DA-E73347B53D7C}|LibraryPractice\\LibraryPractice.csproj|c:\\users\\user\\documents\\github\\constructorspractice\\librarypractice\\librarypractice\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{034607DF-558C-4258-A6DA-E73347B53D7C}|LibraryPractice\\LibraryPractice.csproj|solutionrelative:librarypractice\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +26,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\LibraryPractice\\Users.cs",
+              "RelativeDocumentMoniker": "LibraryPractice\\Users.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\LibraryPractice\\Users.cs",
+              "RelativeToolTip": "LibraryPractice\\Users.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T10:22:38.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\Skapar\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\LibraryPractice\\Book.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\LibraryPractice\\Book.cs",
               "RelativeDocumentMoniker": "LibraryPractice\\Book.cs",
-              "ToolTip": "C:\\Users\\Skapar\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\LibraryPractice\\Book.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\LibraryPractice\\Book.cs",
               "RelativeToolTip": "LibraryPractice\\Book.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T07:51:50.67Z",
               "EditorCaption": ""
@@ -41,24 +58,24 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Library.cs",
-              "DocumentMoniker": "C:\\Users\\Skapar\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\LibraryPractice\\Library.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\LibraryPractice\\Library.cs",
               "RelativeDocumentMoniker": "LibraryPractice\\Library.cs",
-              "ToolTip": "C:\\Users\\Skapar\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\LibraryPractice\\Library.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\LibraryPractice\\Library.cs",
               "RelativeToolTip": "LibraryPractice\\Library.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAYAAAA",
+              "ViewState": "AQIAAKEAAAAAAAAAAAAgwKcAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T07:51:32.37Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Skapar\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\LibraryPractice\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\LibraryPractice\\Program.cs",
               "RelativeDocumentMoniker": "LibraryPractice\\Program.cs",
-              "ToolTip": "C:\\Users\\Skapar\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\LibraryPractice\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\ConstructorsPractice\\LibraryPractice\\LibraryPractice\\Program.cs",
               "RelativeToolTip": "LibraryPractice\\Program.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAYwDAAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T13:03:03.528Z",
               "EditorCaption": ""

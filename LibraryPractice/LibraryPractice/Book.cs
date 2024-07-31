@@ -14,7 +14,6 @@ namespace LibraryPractice
         public string bookType;
         public double bookPrice;
     
-        public string[] userNames;
-        public string[] passwords;
+        
     }
 }
