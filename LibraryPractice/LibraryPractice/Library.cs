@@ -99,6 +99,26 @@ namespace LibraryPractice
                     if (kadi == users[0].name && sifre == users[0].pass)
                     {
                         Console.WriteLine("Admin Girişi yapıldı");
+
+                        string devam = "e";
+                        while (devam == "e")
+                        {
+                            Book kitap = new Book();
+                            Console.WriteLine("Kitap adı giriniz: ");
+                            kitap.bookName = Console.ReadLine();
+                            Console.WriteLine("Kitap yazar adı giriniz: ");
+                            kitap.bookAuthor = Console.ReadLine();
+                            Console.WriteLine("Kitap türü giriniz: ");
+                            kitap.bookType = Console.ReadLine();
+                            Console.WriteLine("Kitap fiyatı giriniz: ");
+                            kitap.bookPrice = Convert.ToDouble(Console.ReadLine());
+
+                            AddBook(kitap);
+
+
+                            Console.WriteLine("Kitap eklemeye devam etmek istiyor musunuz? ");
+                            devam = Console.ReadLine();
+                        }
                     }
                     else
                     {
@@ -109,17 +129,19 @@ namespace LibraryPractice
                         Console.WriteLine("2) Türe göre kitap listesi");
                         Console.WriteLine("Lütfen seçim yapınız");
                         string secim = Console.ReadLine();
+                      
                         if (secim == "1")
                         {
                             ListBook();
                         }
                         else
                         {
+                            TypeListing();
                             ListByType();
                         }
 
                     }
-                    Console.WriteLine("Hoşgeldiniz");
+                    
                 }
                 else
                 {
@@ -161,12 +183,39 @@ namespace LibraryPractice
         #endregion
 
         #region TypeListing
-        public void ListByType()
+        public void TypeListing()
         {
+            string[] types = new string[books.Length];
+            int checkIndex = 0;
+
             for (int i = 0; i < books.Length; i++)
             {
-                Console.WriteLine(books[i].bookType);
+                bool isIN = false;
+                for (int j = 0; j < types.Length; j++)
+                {
+                    if (books[i].bookType == types[j])
+                    {
+                        isIN = true;
+                        break;
+                    }
+                }
+                if (isIN == false)
+                {
+                    types[checkIndex] = books[i].bookType;
+                    checkIndex++;
+                    Console.WriteLine(books[i].bookType);
+
+                }
             }
+        }
+
+        #endregion
+
+        #region TypeSearch
+
+        public void ListByType()
+        {
+            
             Console.WriteLine("Lütfen aramak istediğiniz türü giriniz ");
             string secim = Console.ReadLine();
             secim = secim.ToLower();
@@ -191,10 +240,8 @@ namespace LibraryPractice
                     Console.WriteLine((i + 1) + ") " + books[i].bookName);
                 }
             }
-
-
         }
-        #endregion   
+        #endregion
     }
 }
 
